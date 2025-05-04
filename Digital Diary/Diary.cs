@@ -42,7 +42,7 @@ public class Diary
             
             UpdateFilePath();
             
-            string entry = $"[{DateTime.Now.ToString("YYY-MM-DD")}] [{DateTime.Now.ToString("HH:mm:ss")}]: {text}";
+            string entry = $"[{DateTime.Now.ToString("yyyy-MMMM-dd")}] [{DateTime.Now.ToString("HH:mm:ss")}]: {text}";
             using (StreamWriter writer = new StreamWriter(filePath, true))
             {
                 writer.WriteLine(entry);
