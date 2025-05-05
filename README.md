@@ -1,10 +1,10 @@
 #  Digital Diary – C# Console Application
 
-##  Project Description and Features
+## 💻 Project Description and Features
 
 **Digital Diary** is a C# console-based application that allows users to create, manage, and secure personal diary entries. It implements a simple interface where users must register and log in before accessing the diary features. This program offers basic yet essential functions for diary management and demonstrates file-based data storage.
 
-###  Key Features
+### 🖇 Key Features
 
 - **User Registration and Login**
   - Users can create accounts and log in with secure credentials.
@@ -28,3 +28,16 @@
 - **File-Based Persistence**
   - All user data and diary entries are stored and managed using the file system.
   - Each user has a separate folder with entries stored by date.
+ 
+##  <a id = "contrib"> 👨‍💻 Contributors </a> <br>
+| Name | Role | E-mail | Other Contacts |
+| --- | --- | --- | --- |
+| <a href = "https://github.com/CambaRalphVincent">Camba, Ralph Vincent</a> | Developer | 23-02389@g.batstate-u.edu.ph|   |
+| <a href = "https://github.com/LenardAndrei">Panganiban, Lenard Andrei</a>|  Developer  | 23-02989@g.batstate-u.edu.ph |  |
+| <a href = "https://github.com/EdrickaMaePaulos">Paulos, Edricka Mae</a>| Developer | 23-07123@g.batstate-u.edu.ph | |
+| <a href = "https://github.com/RC-Torres>">Torres, Richard Crue</a>| Developer | 23-02148@g.batstate-u.edu.ph | |
+
+<h3> COURSE </h3>
+<p> CS 222 - Advance Object-Oriented Programming</p>
+<h3> FACILITATOR </h3>
+<p> Ms. Fatima Marie Agdon</p> <br>
