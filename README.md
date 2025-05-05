@@ -86,9 +86,43 @@ Polymorphism is applied through the use of the abstract class DiaryBase and its 
 ### [6] Exit
 - Choose **Exit** to close the application completely.
 
+## Sample Output
 
-![loggein](https://github.com/user-attachments/assets/8ed66dba-1585-4a4d-916a-db9ee7903d60)
+### Start
+![start](https://github.com/user-attachments/assets/835fd5fe-17ea-4d8b-ae0d-459bb7301193)
 
+### Register
+![Register](https://github.com/user-attachments/assets/be9bd0de-dbdb-42fe-81ab-63d7e535e291)
+
+### Login
+![login](https://github.com/user-attachments/assets/88e13dcd-849e-4403-8a87-2c2df12860ae)   ![loggein](https://github.com/user-attachments/assets/670880a5-6c5f-4f74-8b64-126672062c51)
+
+### First Entry 
+![firstentry](https://github.com/user-attachments/assets/fea2f34e-ed6b-4d5e-acb2-b8f5623892db)
+
+### Second Entry
+![secondentry](https://github.com/user-attachments/assets/a0b69875-85fb-4998-96b7-47d70149b00d)
+
+### View Entries in Console
+![entriesConsole](https://github.com/user-attachments/assets/c05cafde-0a04-486b-a2e9-a1b95939e708)
+
+### View Entries in TXT File
+![entriesTXT](https://github.com/user-attachments/assets/a403ba46-88c3-479d-aac3-f66add5436e6)
+
+### Search Entry
+![searchEntry](https://github.com/user-attachments/assets/2103ef63-c570-45c8-83a8-6c76b2d6e55f)
+
+### Delete Entry
+![deleteEntry](https://github.com/user-attachments/assets/5dde80b9-3339-4480-a14b-e830a16f46b9)
+
+### View Entry after Delete
+![viewafterdelete](https://github.com/user-attachments/assets/a99bd545-c4f1-45fd-af12-c4d6f2e82a51)
+
+### Logout
+![logout](https://github.com/user-attachments/assets/15b92a61-d5dd-4ff9-84a9-23191137a8ed)
+
+### Exit the Program
+![exit](https://github.com/user-attachments/assets/0b5831c8-bf1e-41c0-8823-12972a098906)
 
 
 ##  <a id = "contrib"> 👨‍💻 Contributors </a> <br>
