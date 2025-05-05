@@ -37,7 +37,7 @@ Encapsulation in the code is achieved by hiding the internal details of the User
 
 ### Abstraction
 
-	Abstraction is used in this program through the abstract class DiaryBase, which provides a general template for diary-related actions such as WriteEntry, ViewAllEntries, SearchByDate, and DeleteEntry. These methods are declared in the base class but have no actual code, leaving the details to be defined by any class that inherits from it. The Diary class inherits from DiaryBase and gives its own specific implementation of these methods. This approach hides complex code details and focuses on what actions the diary should perform, not how they are done. Abstraction makes the program easier to manage, reuse, and extend in the future.
+Abstraction is used in this program through the abstract class DiaryBase, which provides a general template for diary-related actions such as WriteEntry, ViewAllEntries, SearchByDate, and DeleteEntry. These methods are declared in the base class but have no actual code, leaving the details to be defined by any class that inherits from it. The Diary class inherits from DiaryBase and gives its own specific implementation of these methods. This approach hides complex code details and focuses on what actions the diary should perform, not how they are done. Abstraction makes the program easier to manage, reuse, and extend in the future.
 
 ### Inheritance
 
@@ -47,7 +47,7 @@ Inheritance is demonstrated through the relationship between the abstract class 
 
 Polymorphism is applied through the use of the abstract class DiaryBase and its derived class Diary. DiaryBase defines abstract methods like WriteEntry, ViewAllEntries, SearchByDate, and DeleteEntry, which must be implemented by any class that inherits from it. The Diary class provides its own specific implementation for each of these methods. Because of polymorphism, code that works with DiaryBase—such as a controller class or a menu system—can interact with any subclass, like Diary, without needing to know its exact implementation. This enables flexibility and scalability, allowing developers to introduce new diary behaviors or formats in other derived classes without modifying the core logic that uses the base class. The ability to call overridden methods in Diary through a DiaryBase reference is a key example of runtime polymorphism.
 
-#Instructions on running the app
+# Instructions on running the app
 ## 🔐 Getting Started
 
 ### Register (New Users)
