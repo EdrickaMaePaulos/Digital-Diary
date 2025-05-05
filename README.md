@@ -87,6 +87,10 @@ Polymorphism is applied through the use of the abstract class DiaryBase and its 
 - Choose **Exit** to close the application completely.
 
 
+![loggein](https://github.com/user-attachments/assets/8ed66dba-1585-4a4d-916a-db9ee7903d60)
+
+
+
 ##  <a id = "contrib"> 👨‍💻 Contributors </a> <br>
 | Name | Role | E-mail | Other Contacts |
 | --- | --- | --- | --- |
