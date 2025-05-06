@@ -125,8 +125,8 @@ Polymorphism is applied through the use of the abstract class DiaryBase and its 
 ![exit](https://github.com/user-attachments/assets/0b5831c8-bf1e-41c0-8823-12972a098906)
 
 
-## File Structured
-
+## 📁 File Structure
+```
 Digital Diary/
 ├── 📂 bin/Debug/net9.0/
 │ ├── Digital Diary.deps.json
@@ -151,7 +151,7 @@ Digital Diary/
 ├── Program.cs # Entry point of the application
 ├── User.cs # Contains the User class for authentication
 └── README.md # Project documentation
-
+```
 
 ##  <a id = "contrib"> 👨‍💻 Contributors </a> <br>
 | Name | Role | E-mail | Other Contacts |
