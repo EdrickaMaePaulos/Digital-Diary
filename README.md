@@ -129,7 +129,42 @@ This use of inheritance allows the Diary class to reuse the common functionality
 
 ### Polymorphism
 
-Polymorphism is applied through the use of the abstract class DiaryBase and its derived class Diary. DiaryBase defines abstract methods like WriteEntry, ViewAllEntries, SearchByDate, and DeleteEntry, which must be implemented by any class that inherits from it. The Diary class provides its own specific implementation for each of these methods. Because of polymorphism, code that works with DiaryBase—such as a controller class or a menu system—can interact with any subclass, like Diary, without needing to know its exact implementation. This enables flexibility and scalability, allowing developers to introduce new diary behaviors or formats in other derived classes without modifying the core logic that uses the base class. The ability to call overridden methods in Diary through a DiaryBase reference is a key example of runtime polymorphism.
+Polymorphism is applied through the use of the abstract class DiaryBase and its derived class Diary. DiaryBase defines abstract methods like WriteEntry, ViewAllEntries, SearchByDate, and DeleteEntry, which must be implemented by any class that inherits from it.
+```
+public abstract class DiaryBase
+{
+    public abstract void WriteEntry(string text);
+    public abstract void ViewAllEntries();
+    public abstract void SearchByDate(string date);
+    public abstract void DeleteEntry();
+}
+```
+The Diary class provides its own specific implementation for each of these methods.
+```
+public class Diary : DiaryBase
+{
+    public override void WriteEntry(string text)
+    {
+        // Implementation of WriteEntry
+    }
+
+    public override void ViewAllEntries()
+    {
+        // Implementation of ViewAllEntries
+    }
+
+    public override void SearchByDate(string date)
+    {
+        // Implementation of SearchByDate
+    }
+
+    public override void DeleteEntry()
+    {
+        // Implementation of DeleteEntry
+    }
+}
+```
+Because of polymorphism, code that works with DiaryBase—such as a controller class or a menu system—can interact with any subclass, like Diary, without needing to know its exact implementation. This enables flexibility and scalability, allowing developers to introduce new diary behaviors or formats in other derived classes without modifying the core logic that uses the base class. The ability to call overridden methods in Diary through a DiaryBase reference is a key example of runtime polymorphism.
 
 # Instructions on running the app
 ## 🔐 Getting Started
