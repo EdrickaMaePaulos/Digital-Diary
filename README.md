@@ -74,45 +74,13 @@ public abstract class DiaryBase
     protected string filePath;
     protected readonly DiaryManager diaryManager;
 
-    public DiaryBase(DiaryManager manager)
-    {
-        diaryManager = manager;
-
-        if (!Directory.Exists("Diaries"))
-        {
-            Directory.CreateDirectory("Diaries");
-        }
-    }
-
-    protected void UpdateFilePath()
-    {
-        string username = diaryManager.GetCurrentUsername();
-        string userDir = Path.Combine("Diaries", username);
-
-        if (!Directory.Exists(userDir))
-        {
-            Directory.CreateDirectory(userDir);
-        }
-
-        filePath = Path.Combine(userDir, "diary.txt");
-
-        if (!File.Exists(filePath))
-        {
-            File.Create(filePath).Close();
-        }
-    }
-
     public abstract void WriteEntry(string text);
     public abstract void ViewAllEntries();
     public abstract void SearchByDate(string date);
     public abstract void DeleteEntry();
 
-    public virtual void Pause()
-    {
-        Console.WriteLine("\n\t\tPress any key to continue...");
-        Console.ReadKey();
-    }
 }
+```
 ```
 public class Diary : DiaryBase
 ```
