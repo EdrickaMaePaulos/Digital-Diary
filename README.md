@@ -125,6 +125,34 @@ Polymorphism is applied through the use of the abstract class DiaryBase and its 
 ![exit](https://github.com/user-attachments/assets/0b5831c8-bf1e-41c0-8823-12972a098906)
 
 
+## File Structured
+
+Digital Diary/
+├── 📂 bin/Debug/net9.0/
+│ ├── Digital Diary.deps.json
+│ ├── Digital Diary.dll
+│ ├── Digital Diary.exe
+│ ├── Digital Diary.pdb
+│ ├── Digital Diary.runtimeconfig.json
+│ └── diary.txt
+│
+├── 📂 obj/Debug/net9.0/
+│ ├── Digital Diary.csproj.nuget.dgspec.json
+│ ├── Digital Diary.csproj.nuget.g.props
+│ ├── Digital Diary.csproj.nuget.g.targets
+│ ├── project.assets.json
+│ ├── project.nuget.cache
+│ ├── project.packagespec.json
+│ ├── rider.project.model.nuget.info
+│ └── rider.project.restore.info
+│
+├── Diary.cs # Contains the Diary class and related functionality
+├── Digital Diary.csproj # Project file for the C# application
+├── Program.cs # Entry point of the application
+├── User.cs # Contains the User class for authentication
+└── README.md # Project documentation
+
+
 ##  <a id = "contrib"> 👨‍💻 Contributors </a> <br>
 | Name | Role | E-mail | Other Contacts |
 | --- | --- | --- | --- |
