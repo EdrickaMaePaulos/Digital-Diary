@@ -184,7 +184,9 @@ Because of polymorphism, code that works with DiaryBase—such as a controller c
     - Log in
     - Write, view, search, or delete diary entries
   Follow on-screen prompts to use the features.
----
+
+
+
 ## 📁 File Structure
 ```
 Digital Diary/
