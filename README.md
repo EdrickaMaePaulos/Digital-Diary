@@ -183,6 +183,7 @@ When the app runs, you'll see a menu to:
   - Register a new account
   - Log in
   - Write, view, search, or delete diary entries
+
 Follow on-screen prompts to use the features.
 
 
