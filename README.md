@@ -179,11 +179,11 @@ Because of polymorphism, code that works with DiaryBase—such as a controller c
   dotnet run
   ```
 ### Usage:
-  When the app runs, you'll see a menu to:
-    - Register a new account
-    - Log in
-    - Write, view, search, or delete diary entries
-  Follow on-screen prompts to use the features.
+When the app runs, you'll see a menu to:
+  - Register a new account
+  - Log in
+  - Write, view, search, or delete diary entries
+Follow on-screen prompts to use the features.
 
 
 
