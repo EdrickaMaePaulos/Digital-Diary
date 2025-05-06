@@ -52,7 +52,18 @@ public class DiaryManager
         private readonly Dictionary<string, User> users;
         private User currentUser;
 ```
-The DiaryBase and Diary classes handle diary entry management through methods like WriteEntry, ViewAllEntries, SearchByDate, and DeleteEntry. This approach ensures that data is accessed and modified in a controlled manner, promoting data protection and a clear separation between the internal state of objects and external interaction.
+The DiaryBase and Diary classes handle diary entry management through methods like WriteEntry, ViewAllEntries, SearchByDate, and DeleteEntry. 
+```
+public abstract class DiaryBase
+{
+    protected string filePath;
+    protected readonly DiaryManager diaryManager;
+```
+```
+public class Diary : DiaryBase
+```
+
+This approach ensures that data is accessed and modified in a controlled manner, promoting data protection and a clear separation between the internal state of objects and external interaction.
 
 ### Abstraction
 
