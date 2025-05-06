@@ -67,7 +67,56 @@ This approach ensures that data is accessed and modified in a controlled manner,
 
 ### Abstraction
 
-Abstraction is used in this program through the abstract class DiaryBase, which provides a general template for diary-related actions such as WriteEntry, ViewAllEntries, SearchByDate, and DeleteEntry. These methods are declared in the base class but have no actual code, leaving the details to be defined by any class that inherits from it. The Diary class inherits from DiaryBase and gives its own specific implementation of these methods. This approach hides complex code details and focuses on what actions the diary should perform, not how they are done. Abstraction makes the program easier to manage, reuse, and extend in the future.
+Abstraction is used in this program through the abstract class DiaryBase, which provides a general template for diary-related actions such as WriteEntry, ViewAllEntries, SearchByDate, and DeleteEntry. These methods are declared in the base class but have no actual code, leaving the details to be defined by any class that inherits from it. The Diary class inherits from DiaryBase and gives its own specific implementation of these methods. 
+```
+public abstract class DiaryBase
+{
+    protected string filePath;
+    protected readonly DiaryManager diaryManager;
+
+    public DiaryBase(DiaryManager manager)
+    {
+        diaryManager = manager;
+
+        if (!Directory.Exists("Diaries"))
+        {
+            Directory.CreateDirectory("Diaries");
+        }
+    }
+
+    protected void UpdateFilePath()
+    {
+        string username = diaryManager.GetCurrentUsername();
+        string userDir = Path.Combine("Diaries", username);
+
+        if (!Directory.Exists(userDir))
+        {
+            Directory.CreateDirectory(userDir);
+        }
+
+        filePath = Path.Combine(userDir, "diary.txt");
+
+        if (!File.Exists(filePath))
+        {
+            File.Create(filePath).Close();
+        }
+    }
+
+    public abstract void WriteEntry(string text);
+    public abstract void ViewAllEntries();
+    public abstract void SearchByDate(string date);
+    public abstract void DeleteEntry();
+
+    public virtual void Pause()
+    {
+        Console.WriteLine("\n\t\tPress any key to continue...");
+        Console.ReadKey();
+    }
+}
+```
+public class Diary : DiaryBase
+```
+This approach hides complex code details and focuses on what actions the diary should perform, not how they are done. Abstraction makes the program easier to manage, reuse, and extend in the future.
 
 ### Inheritance
 
