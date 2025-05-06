@@ -88,7 +88,44 @@ This approach hides complex code details and focuses on what actions the diary s
 
 ### Inheritance
 
-Inheritance is demonstrated through the relationship between the abstract class DiaryBase and the derived class Diary. The DiaryBase class serves as a blueprint that outlines the core structure and required functionalities for any diary-related class. It defines common fields like filePath and diaryManager, and provides shared methods such as UpdateFilePath() for setting up the diary file and Pause() for user interaction. It also declares four abstract methods—WriteEntry, ViewAllEntries, SearchByDate, and DeleteEntry—which must be implemented by any subclass. The Diary class inherits from DiaryBase and provides its own concrete implementations of these abstract methods. This use of inheritance allows the Diary class to reuse the common functionality from the base class while also defining specific behaviors for each operation. It promotes cleaner, more organized code by separating shared logic from the individual implementation details, and supports maintainability and scalability in the application's design.
+Inheritance is demonstrated through the relationship between the abstract class DiaryBase and the derived class Diary. 
+The DiaryBase class serves as a blueprint that outlines the core structure and required functionalities for any diary-related class. It defines common fields like filePath and diaryManager, and provides shared methods such as UpdateFilePath() for setting up the diary file and Pause() for user interaction. It also declares four abstract methods—WriteEntry, ViewAllEntries, SearchByDate, and DeleteEntry—which must be implemented by any subclass. 
+```
+public abstract class DiaryBase
+{
+    protected string filePath;
+    protected readonly DiaryManager diaryManager;
+
+    public DiaryBase(DiaryManager manager)
+    {
+        diaryManager = manager;
+
+        if (!Directory.Exists("Diaries"))
+        {
+            Directory.CreateDirectory("Diaries");
+        }
+    }
+
+    protected void UpdateFilePath()
+    {
+        // logic of UpdateFilePath
+    }
+
+    public abstract void WriteEntry(string text);
+    public abstract void ViewAllEntries();
+    public abstract void SearchByDate(string date);
+    public abstract void DeleteEntry();
+
+    public virtual void Pause()
+    {
+        // logic of Pause
+    }
+```
+The Diary class inherits from DiaryBase and provides its own concrete implementations of these abstract methods
+```
+public class Diary : DiaryBase
+```
+This use of inheritance allows the Diary class to reuse the common functionality from the base class while also defining specific behaviors for each operation. It promotes cleaner, more organized code by separating shared logic from the individual implementation details, and supports maintainability and scalability in the application's design.
 
 ### Polymorphism
 
