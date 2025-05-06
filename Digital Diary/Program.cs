@@ -91,7 +91,7 @@ public class Program
                     Console.WriteLine("\t\t\t[2]\tRegister");
                     Console.WriteLine("\t\t\t[3]\tExit");
                     Console.WriteLine("\n" + new string('-', 60));
-                    Console.Write("\t\tEnter your choice: ");
+                    Console.Write("\t\t\tEnter your choice: ");
                     string choice = Console.ReadLine();
                     
                     switch (choice)
