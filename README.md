@@ -165,3 +165,12 @@ Digital Diary/
 <p> CS 222 - Advance Object-Oriented Programming</p>
 <h3> FACILITATOR </h3>
 <p> Ms. Fatima Marie Agdon</p> <br>
+
+## 🙏 Acknowledgement
+
+We would like to express our heartfelt gratitude to **Ms. Fatima Marie Agdon**, our professor, for her valuable guidance, support, and encouragement throughout the development of this project. 
+
+This project is a collaborative effort of four dedicated members, who worked together in designing, developing, and testing the features of this application. Our teamwork and shared learning have played a vital role in bringing this project to life.
+
+Thank you for being a part of our learning journey!
+
