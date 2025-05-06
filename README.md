@@ -123,7 +123,7 @@ Polymorphism is applied through the use of the abstract class DiaryBase and its 
 
 ### Exit the Program
 ![exit](https://github.com/user-attachments/assets/0b5831c8-bf1e-41c0-8823-12972a098906)
-
+---
 
 ## 📁 File Structure
 ```
