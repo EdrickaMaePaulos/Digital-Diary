@@ -33,7 +33,26 @@
 
 ### Encapsulation
 
-Encapsulation in the code is achieved by hiding the internal details of the User, DiaryManager, and DiaryBase classes and exposing controlled access through public methods and properties. The get and set methods in the User class allow controlled access to private fields like Username and PasswordHash, ensuring that sensitive data is not directly modified. The DiaryManager class encapsulates user-related operations like login and registration, while the DiaryBase and Diary classes handle diary entry management through methods like WriteEntry, ViewAllEntries, SearchByDate, and DeleteEntry. This approach ensures that data is accessed and modified in a controlled manner, promoting data protection and a clear separation between the internal state of objects and external interaction.
+Encapsulation in the code is achieved by hiding the internal details of the User, DiaryManager, and DiaryBase classes and exposing controlled access through public methods and properties. 
+
+The get and set methods in the User class allow controlled access to private fields like Username and PasswordHash, ensuring that sensitive data is not directly modified.
+```
+public class User
+    {
+        public string Username { get; set; }
+        public string PasswordHash { get; set; }
+    }
+```
+
+The DiaryManager class encapsulates user-related operations like login and registration.
+```
+public class DiaryManager
+    {
+        private readonly string usersFilePath;
+        private readonly Dictionary<string, User> users;
+        private User currentUser;
+```
+The DiaryBase and Diary classes handle diary entry management through methods like WriteEntry, ViewAllEntries, SearchByDate, and DeleteEntry. This approach ensures that data is accessed and modified in a controlled manner, promoting data protection and a clear separation between the internal state of objects and external interaction.
 
 ### Abstraction
 
