@@ -166,44 +166,52 @@ public class Diary : DiaryBase
 ```
 Because of polymorphism, code that works with DiaryBase—such as a controller class or a menu system—can interact with any subclass, like Diary, without needing to know its exact implementation. This enables flexibility and scalability, allowing developers to introduce new diary behaviors or formats in other derived classes without modifying the core logic that uses the base class. The ability to call overridden methods in Diary through a DiaryBase reference is a key example of runtime polymorphism.
 
-# Instructions on running the app
-## 🔐 Getting Started
-
-### Register (New Users)
-- Select the `Register` option from the menu.
-- Provide your personal details to create a new account.
-
-### Log In (Existing Users)
-- Select the `Log In` option.
-- Enter your registered username and password to access your diary.
-
+## 🛠️ Instructions on Running the App
+### Requirements:
+  - .NET SDK installed (e.g., .NET 6 or later)
+  - A C# IDE (e.g., Visual Studio, Visual Studio Code, or JetBrains Rider)
+### Steps to Run:
+  1. Download or clone the project folder.
+  2. Open a terminal/command prompt.
+  3. Navigate to the project directory using cd.
+  4. Compile and run the program:
+  ```
+  dotnet run
+  ```
+### Usage:
+  When the app runs, you'll see a menu to:
+    - Register a new account
+    - Log in
+    - Write, view, search, or delete diary entries
+  Follow on-screen prompts to use the features.
 ---
-
-### [1] Write a New Entry
-- After logging in, choose **Write a New Entry** from the menu.
-- Type your diary content when prompted.
-- The entry will be saved automatically with the **current date and time**.
-
-### [2] View All Entries
-- Select **View All Entries** from the main menu.
-- All diary entries will be shown in **chronological order**.
-- Each entry includes the **date** and **text content**.
-
-### [3] Search Entries by Date
-- Choose **Search by Date** from the menu.
-- Enter a date in the format: `yyyy-MMMM-dd` (e.g., `2025-May-05`).
-- All matching entries for that date will be displayed.
-
-### [4] Delete an Entry
-- Select **Delete Entry** from the menu.
-- Enter the **date** of the entry you want to delete.
-- If found, the entry will be **permanently deleted**.
-
-### [5] Log Out
-- Select **Log Out** to safely end your session.
-
-### [6] Exit
-- Choose **Exit** to close the application completely.
+## 📁 File Structure
+```
+Digital Diary/
+├── 📂 bin/Debug/net9.0/
+│ ├── Digital Diary.deps.json
+│ ├── Digital Diary.dll
+│ ├── Digital Diary.exe
+│ ├── Digital Diary.pdb
+│ ├── Digital Diary.runtimeconfig.json
+│ └── diary.txt
+│
+├── 📂 obj/Debug/net9.0/
+│ ├── Digital Diary.csproj.nuget.dgspec.json
+│ ├── Digital Diary.csproj.nuget.g.props
+│ ├── Digital Diary.csproj.nuget.g.targets
+│ ├── project.assets.json
+│ ├── project.nuget.cache
+│ ├── project.packagespec.json
+│ ├── rider.project.model.nuget.info
+│ └── rider.project.restore.info
+│
+├── Diary.cs # Contains the Diary class and related functionality
+├── Digital Diary.csproj # Project file for the C# application
+├── Program.cs # Entry point of the application
+├── User.cs # Contains the User class for authentication
+└── README.md # Project documentation
+```
 
 ## Sample Output
 
@@ -243,34 +251,6 @@ Because of polymorphism, code that works with DiaryBase—such as a controller c
 ### Exit the Program
 ![exit](https://github.com/user-attachments/assets/0b5831c8-bf1e-41c0-8823-12972a098906)
 ---
-
-## 📁 File Structure
-```
-Digital Diary/
-├── 📂 bin/Debug/net9.0/
-│ ├── Digital Diary.deps.json
-│ ├── Digital Diary.dll
-│ ├── Digital Diary.exe
-│ ├── Digital Diary.pdb
-│ ├── Digital Diary.runtimeconfig.json
-│ └── diary.txt
-│
-├── 📂 obj/Debug/net9.0/
-│ ├── Digital Diary.csproj.nuget.dgspec.json
-│ ├── Digital Diary.csproj.nuget.g.props
-│ ├── Digital Diary.csproj.nuget.g.targets
-│ ├── project.assets.json
-│ ├── project.nuget.cache
-│ ├── project.packagespec.json
-│ ├── rider.project.model.nuget.info
-│ └── rider.project.restore.info
-│
-├── Diary.cs # Contains the Diary class and related functionality
-├── Digital Diary.csproj # Project file for the C# application
-├── Program.cs # Entry point of the application
-├── User.cs # Contains the User class for authentication
-└── README.md # Project documentation
-```
 
 ##  <a id = "contrib"> 👨‍💻 Contributors </a> <br>
 | Name | Role | E-mail | Other Contacts |
